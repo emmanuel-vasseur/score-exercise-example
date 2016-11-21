@@ -1,19 +1,21 @@
-# SCORE JENKINS CONFIGURATION #
+# Local Jenkins testing instance #
 
 Example of configuration to use score project with a Jenkins server
 
 ### Dependencies ###
 
-* Java 8
-* Jenkins 2.32 ou +
-* Jenkins git, maven, pipeline & dsl plugin
+* Git
+* Java 8+
+* Maven 3.3+
 
 ## Installation ##
 
-Start Jenkins via a docker container or by downloading jenkins war launched with the jenkins-start script example in this directory.
-Install plugins.
-Create teams as jenkins users.
-Create a 'seed' project that clone your exercise repository (or this one if you want to use the example).
-Add a DSL step configured with your jobs dsl (or exercise_example_jenkins_jobs.groovy of this repository).
-Launch your 'seed' project in order to create all jobs.
+Downloading jenkins 2.33+ war on jenkins.io.
 
+Copy and adapt the jenkins-start script of this directory.
+
+Launch jenkins, it will be available on localhost:8080.
+
+Process the installation, with recommended plugins
+
+Create your free-style job, for integrate modifications on your project.
